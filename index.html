@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revou</title>
+    <title>Test Revou Bootcamp</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+    <p class="text-3xl pb-4">Hello World!</p>
+    <hr/>
+    <p>Halo, nama saya <br />Verel</p>
+    <!-- Ini komentar untuk baris, menggunkan CTRL / -->
+    <h1>Ini heading 1</h1>
+    <h2>Ini heading 2</h2>
+    <h3>Ini heading 3</h3>
+    <h4>Ini heading 4</h4>
+    <h5>Ini heading 5</h5>
+    <p>Teks ini adalah <b>Bold</b> nya, <i>italic</i> nya.</p>
+    <p>Ini tulisan ke <sub>Bawah</sub> dan ini ke <sup>Atas</sup></p>
+
+    <h1>Bullet Point</h1>
+    <!-- Unordered List -->
+    <ul>
+        <!-- List Item -->
+        <li>Pisang</li>
+        <li>Jeruk</li>
+        <li>Mangga</li>
+    </ul>
+
+    <h1>Urutan Angka</h1>
+    <p>Kebutuhan buah di Kulkas:</p>
+    <!-- Ordered List -->
+    <ol type="I">
+        <!-- List Item -->
+        <li>Apel</li>
+        <li>Melon</li>
+        <li>Semangka</li>
+    </ol>
+
+    <h1>Tabel</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfred</td>
+                <td>alfre@oke.com</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Budy</td>
+                <td>budi@oke.com</td>
+                <td>Indonesia</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>char@oke.com</td>
+                <td>USA</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Gambar</h1>
+    <img src="images/revou.png" alt="Gambar Revou" width="150">
+    <br>
+    <img src="https://hybrid.co.id/wp-content/uploads/2019/06/3816aa13baa8e522f8e9bd18456b7db6_revou_logo.png"
+        alt="Revou Logo URL" width="150">
+
+    <h1>Link</h1>
+    <p>Ini adalah link <a href="https://www.revou.co/id" target="_blank">Revou Web</a></p>
+    <p>Mau scroll ke <a href="#lorem">Lorem</a></p>
+
+    <h1>Form Contact Us</h1>
+    <form>
+        <label>Nama</label>
+        <input type="text" placeholder="Tulis nama Anda..">
+        <br>
+        <label>Umur</label>
+        <input type="number" min="0" max="120" placeholder="21">
+        <br>
+        <label>Password</label>
+        <input type="password" placeholder="*****">
+        <br>
+        <label>Jenis Kelamin</label>
+        <input type="radio">Laki-laki
+        <input type="radio"> Perempuan
+        <br>
+        <label>Makanan Favorit</label>
+        <select>
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+            <option value="hot-dog">Hot Dog</option>
+        </select>
+        <br>
+        <label>Comment</label>
+        <br>
+        <textarea rows="10" cols="21" placeholder="Tulis komentar Anda disini.."></textarea>
+        <br>
+        <input type="checkbox"> Saya setuju dengan syarat dan ketentuan
+        <br>
+        <input type="button" value="Send">
+        <button>Kirim</button>
+    </form>
+    <p id="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque neque quibusdam voluptatum,
+        sit earum ullam dolorum nemo voluptate id tempora corporis ratione. Sit laboriosam beatae amet pariatur
+        praesentium? Doloremque.</p>
 </body>
+
 </html>

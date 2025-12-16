@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Revou Bootcamp</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-xl space-y-8">
+
+    <!-- HERO -->
+    <p class="text-4xl font-bold text-blue-600">Hello World!</p>
+    <hr class="border-gray-300">
+
+    <p class="text-lg">Halo, nama saya <br><span class="font-semibold">Verel</span></p>
+
+    <!-- HEADING -->
+    <div class="space-y-1">
+      <h1 class="text-2xl font-bold">Ini heading 1</h1>
+      <h2 class="text-xl font-semibold">Ini heading 2</h2>
+      <h3 class="text-lg font-medium">Ini heading 3</h3>
+      <h4 class="font-medium">Ini heading 4</h4>
+      <h5 class="text-sm">Ini heading 5</h5>
+    </div>
+
+    <p>Teks ini adalah <b class="font-bold">Bold</b> nya, <i class="italic">italic</i> nya.</p>
+    <p>Ini tulisan ke <sub class="text-sm">Bawah</sub> dan ini ke <sup class="text-sm">Atas</sup></p>
+
+    <!-- LIST -->
+    <h1 class="text-2xl font-bold">Bullet Point</h1>
+    <ul class="list-disc list-inside space-y-1">
+      <li>Pisang</li>
+      <li>Jeruk</li>
+      <li>Mangga</li>
+    </ul>
+
+    <h1 class="text-2xl font-bold">Urutan Angka</h1>
+    <p>Kebutuhan buah di Kulkas:</p>
+    <ol class="list-decimal list-inside space-y-1">
+      <li>Apel</li>
+      <li>Melon</li>
+      <li>Semangka</li>
+    </ol>
+
+    <!-- TABLE -->
+    <h1 class="text-2xl font-bold">Tabel</h1>
+    <div class="overflow-x-auto">
+      <table class="w-full border border-gray-300 rounded-lg overflow-hidden">
+        <thead class="bg-blue-600 text-white">
+          <tr>
+            <th class="p-3 text-left">Company</th>
+            <th class="p-3 text-left">Contact</th>
+            <th class="p-3 text-left">Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t hover:bg-gray-100">
+            <td class="p-3">Alfred</td>
+            <td class="p-3">alfre@oke.com</td>
+            <td class="p-3">Germany</td>
+          </tr>
+          <tr class="border-t hover:bg-gray-100">
+            <td class="p-3">Budy</td>
+            <td class="p-3">budi@oke.com</td>
+            <td class="p-3">Indonesia</td>
+          </tr>
+          <tr class="border-t hover:bg-gray-100">
+            <td class="p-3">Charlie</td>
+            <td class="p-3">char@oke.com</td>
+            <td class="p-3">USA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- IMAGE -->
+    <h1 class="text-2xl font-bold">Gambar</h1>
+    <div class="flex gap-6 items-center">
+      <img src="images/revou.png" alt="Gambar Revou" class="w-36 rounded-lg shadow">
+      <img src="https://hybrid.co.id/wp-content/uploads/2019/06/3816aa13baa8e522f8e9bd18456b7db6_revou_logo.png"
+        alt="Revou Logo URL" class="w-36 rounded-lg shadow">
+    </div>
+
+    <!-- LINK -->
+    <h1 class="text-2xl font-bold">Link</h1>
+    <p>Ini adalah link
+      <a href="https://www.revou.co/id" target="_blank" class="text-blue-600 underline hover:text-blue-800">
+        Revou Web
+      </a>
+    </p>
+    <p>Mau scroll ke <a href="#lorem" class="text-blue-600 underline">Lorem</a></p>
+
+    <!-- FORM -->
+    <h1 class="text-2xl font-bold">Form Contact Us</h1>
+    <form class="space-y-4">
+      <div>
+        <label class="block font-medium">Nama</label>
+        <input type="text" placeholder="Tulis nama Anda.."
+          class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <div>
+        <label class="block font-medium">Umur</label>
+        <input type="number" min="0" max="120"
+          class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <div>
+        <label class="block font-medium">Password</label>
+        <input type="password"
+          class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <div>
+        <label class="block font-medium">Jenis Kelamin</label>
+        <label class="mr-4"><input type="radio" name="gender"> Laki-laki</label>
+        <label><input type="radio" name="gender"> Perempuan</label>
+      </div>
+
+      <div>
+        <label class="block font-medium">Makanan Favorit</label>
+        <select class="w-full border rounded-lg p-2">
+          <option>Pizza</option>
+          <option>Burger</option>
+          <option>Hot Dog</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium">Comment</label>
+        <textarea rows="4" class="w-full border rounded-lg p-2"></textarea>
+      </div>
+
+      <div>
+        <label><input type="checkbox"> Saya setuju dengan syarat dan ketentuan</label>
+      </div>
+
+      <div class="flex gap-3">
+        <input type="button" value="Send"
+          class="px-4 py-2 bg-gray-300 rounded-lg cursor-pointer hover:bg-gray-400">
+        <button
+          class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+          Kirim
+        </button>
+      </div>
+    </form>
+
+    <p id="lorem" class="text-sm text-gray-600">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque neque quibusdam voluptatum,
+      sit earum ullam dolorum nemo voluptate id tempora corporis ratione.
+    </p>
+
+  </div>
+</body>
+
+</html>
